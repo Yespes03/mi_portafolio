@@ -34,6 +34,44 @@ function App() {
           >
             Descargar CV
           </a>
+
+          <div className="mt-16 px-6">
+  <h2 className="text-3xl font-bold text-left mb-10 text-white">Habilidades</h2>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+    {[
+      { name: 'HTML', img: '/htmll.png' },
+      { name: 'CSS', img: '/css.png' },
+      { name: 'JavaScript', img: '/java.webp' },
+      { name: 'React', img: 'react.png' },
+      { name: 'PHP', img: '/phpp.png' },
+      { name: 'MAMP', img: 'mampp.png' },
+      { name: 'XAMPP', img: 'xampp.svg' },
+      { name: 'Node.js', img: 'nodeee.png' },
+      { name: 'MySQL', img: 'mylqq.png' },
+      { name: 'Tailwind', img: '/tailwind.png' },
+    ].map((skill) => (
+      <div key={skill.name} className="flex flex-col items-center">
+        <img src={skill.img} alt={skill.name} className="w-16 h-16 object-contain mb-2" />
+        <span className="text-white text-sm">{skill.name}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
